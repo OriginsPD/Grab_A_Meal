@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page_title','Order | ')
+@section('page_title','Order | Grab a Plate ')
 
 @section('content')
     @if(session()->has('success'))
