@@ -23,7 +23,7 @@
                     </div></a>
                 </div>
                 <div class="w-full h-64 md:mx-4 rounded-md shadow-xl overflow-hidden bg-cover bg-center md:w-1/2" style="background-image: url('https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg')">
-                    <a href="{{ route('meal_option.create') }}"> <div class="bg-gray-900 bg-opacity-80 flex items-center h-full">
+                    <a href="{{ route('meal_category.create') }}"> <div class="bg-gray-900 bg-opacity-80 flex items-center h-full">
                         <div class="px-10 max-w-xl">
                             <h2 class="text-2xl text-white uppercase font-semibold">Add Meal Category</h2>
                             <p class="mt-2 text-gray-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>

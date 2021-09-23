@@ -15,7 +15,6 @@ class LoginController extends Controller
 
     public function store(LoginUser $request)
     {
-
         if (Auth::attempt($request->validated())) {
             if(auth::user()->is_admin){
                 return redirect()->route('admin.index');

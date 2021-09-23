@@ -13,7 +13,7 @@ class meal_choices extends Model
 
     public $timestamps = false;
 
-    public $fillable = [
+    protected $fillable = [
         'user_id',
         'option_id',
         'date',
@@ -22,11 +22,12 @@ class meal_choices extends Model
 
     public function option()
     {
-       return $this->belongsTo(meal_option::class);
+        return $this->belongsTo(meal_option::class)->with('category');
     }
 
     public function users()
     {
-       return $this->belongsTo(User::class,'user_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
+
 }
